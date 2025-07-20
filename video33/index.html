@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor website</title>
+    <style>
+        :root{
+            --primary-color:#ff0000;
+            --secondary-color:#00ff00;
+            --text-color:black;
+            --background-color: #ffffff;    
+        }
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            --primary-color: var(--primary-color);
+            background-color: blueviolet;
+            padding: 12px 0;
+            font-style: inherit;
+        }
+        ul li{
+            display: inline;
+            padding: 23px;
+            list-style: none;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Search</li>
+            <li>Sign in</li>
+            <li>Sign up</li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>

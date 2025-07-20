@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+    /*.boxes:first-child
+     {
+       background-color: red;
+       color: white;
+    }*
+    .box::first-line
+    /*{
+        font-size: 30px;
+        color: blue;
+    }*/
+    /*.boxes *
+    {
+        background-color:skyblue;
+        color:purple;
+        border: 2px chartreuse solid;
+    }
+    p,a,.box,[data-color="primary"]
+    {
+        margin-top: 45px;
+    }*/
+    /*.box:nth-child(even)
+    {
+        background-color: red;
+        
+    }*/
+    /*.box:nth-last-child(1)
+    {
+        background-color: sandybrown;
+    }*/
+    .boxes::before
+    {
+        content: "Smitha is pretty";
+        color: violet;
+    }
+    .boxes::after
+    {
+        content: "Smitha is very pretty";
+        color:goldenrod;
+    }
+    ::selection
+    {
+        color: yellowgreen;
+        background-color: black;
+    }
+    .box::first-letter
+    {
+        color: peru;
+        font-size: 45px;
+    }
+    input::placeholder
+    {
+        content: hello;
+        color: darkmagenta;
+        font-size: 56px;
+    }
+    </style>
+</head>
+<body>
+     <div class="boxes">
+    <div data-color="primary" class="box">Hey iam a box Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores accusantium iusto illo modi, rerum id nobis commodi perferendis odit eligendi quis iure, totam corporis? Fugiat expedita commodi ad quae provident vel voluptas iusto, non quas incidunt animi possimus porro fugit similique distinctio sunt praesentium magni quidem rerum laborum? Nesciunt aperiam illo nemo quasi neque? Optio eligendi pariatur magni consequuntur fugit, incidunt a commodi repudiandae? Perspiciatis, nisi quo accusantium, consectetur distinctio culpa obcaecati numquam maiores iure placeat repellat eum? Dolore optio ab quo quasi fuga delectus impedit. Dolore adipisci unde, delectus dicta corrupti porro molestias, maiores odio voluptates tenetur dolor repellat?</div>
+    <div class="box">Hey iam a box</div>
+    <div class="box">Hey iam a box</div>
+    </div>
+</body>
+</html>
